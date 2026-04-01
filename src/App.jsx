@@ -25,11 +25,14 @@ const galleryImages = [
   },
 ];
 
-const partnerList = [
-  "Mountain brands",
-  "Editorial teams",
-  "Film crews",
-  "Expedition partners",
+const partnerLogos = [
+  { src: "/assets/logos/Layer_1.png", className: "" },
+  { src: "/assets/logos/image 9.png", className: "" },
+  { src: "/assets/logos/image 10.png", className: "" },
+  { src: "/assets/logos/image 11.png", className: "" },
+  { src: "/assets/logos/image 16.png", className: "" },
+  { src: "/assets/logos/image 13.png", className: "" },
+  { src: "/assets/logos/image 15.png", className: "max-h-[3.75rem] max-w-[10.5rem]" },
 ];
 
 const services = ["Brand partnerships", "Photo & film", "Expeditions"];
@@ -259,11 +262,19 @@ function App() {
                 id="partners"
               >
                 <SectionHeading title="Partners" subtitle="Text List" />
-                <div className="mx-auto max-w-[29rem] space-y-3 text-center text-lg leading-tight">
-                  {partnerList.map((partner) => (
-                    <p key={partner} className="font-display text-[1.9rem] text-text">
-                      {partner}
-                    </p>
+                <div className="mx-auto grid max-w-[30rem] grid-cols-2 items-center justify-items-center gap-x-6 gap-y-8 sm:grid-cols-3">
+                  {partnerLogos.map((logo) => (
+                    <div
+                      key={logo.src}
+                      className="flex min-h-12 w-full items-center justify-center"
+                    >
+                      <img
+                        src={logo.src}
+                        alt=""
+                        aria-hidden="true"
+                        className={`max-h-10 w-auto max-w-[7rem] object-contain opacity-90 mix-blend-multiply ${logo.className}`}
+                      />
+                    </div>
                   ))}
                 </div>
               </RevealSection>
@@ -278,10 +289,7 @@ function App() {
                 <SectionHeading title="Contact" subtitle="Reach Out" />
                 <div className="mx-auto max-w-[24rem] space-y-4 text-center">
                   {["Email", "Instagram"].map((item) => (
-                    <div
-                      key={item}
-                      className="border-b border-[rgba(122,59,42,0.25)] pb-3"
-                    >
+                    <div key={item}>
                       <span className="font-display text-3xl text-text">{item}</span>
                     </div>
                   ))}
