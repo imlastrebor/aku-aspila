@@ -242,10 +242,7 @@ function App() {
                 <SectionHeading title="Work With Me" subtitle="Collaborations" />
                 <div className="mx-auto max-w-[28rem] space-y-4 text-center">
                   {services.map((service) => (
-                    <div
-                      key={service}
-                      className="border-b border-[rgba(122,59,42,0.25)] pb-3"
-                    >
+                    <div key={service}>
                       <span className="font-display text-2xl text-text sm:text-[2rem]">
                         {service}
                       </span>
