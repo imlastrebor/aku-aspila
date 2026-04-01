@@ -36,31 +36,29 @@ const services = ["Brand partnerships", "Photo & film", "Expeditions"];
 function SectionHeading({ title, subtitle }) {
   return (
     <div className="space-y-4 text-center">
-      <div className="flex justify-center">
-        <img
-          src="/assets/Heading decoration.svg"
-          alt=""
-          aria-hidden="true"
-          className="h-5 w-auto opacity-85"
-        />
-      </div>
       {subtitle ? (
         <p className="text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-muted">
           {subtitle}
         </p>
       ) : null}
-      <div className="flex justify-center">
-        <h2 className="font-display text-[2.1rem] uppercase leading-none tracking-[-0.03em] text-text sm:text-[2.7rem]">
-          {title}
-        </h2>
-      </div>
-      <div className="flex justify-center">
+      <div className="flex items-center justify-center gap-3 sm:gap-5">
+        <span className="section-heading-rule" aria-hidden="true" />
         <img
           src="/assets/Heading decoration.svg"
           alt=""
           aria-hidden="true"
-          className="h-5 w-auto opacity-85"
+          className="h-5 w-auto shrink-0 opacity-95"
         />
+        <h2 className="font-display text-[2.1rem] uppercase leading-none tracking-[-0.03em] text-text sm:text-[2.7rem]">
+          {title}
+        </h2>
+        <img
+          src="/assets/Heading decoration.svg"
+          alt=""
+          aria-hidden="true"
+          className="h-5 w-auto shrink-0 scale-x-[-1] opacity-95"
+        />
+        <span className="section-heading-rule" aria-hidden="true" />
       </div>
     </div>
   );
