@@ -129,31 +129,21 @@ function App() {
                 initial={reduceMotion ? false : { opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
-                className="flex min-h-[calc(100dvh-5rem)] flex-col justify-center gap-7 pb-4 pt-6 text-center sm:min-h-[760px] sm:gap-8"
+                className="flex min-h-[calc(100dvh-5rem)] flex-col justify-center gap-7 pb-4 pt-3 text-center sm:min-h-[760px] sm:gap-8 sm:pt-4"
               >
-                <div className="space-y-6">
-                  <div className="flex items-center justify-center gap-4">
+                <div className="space-y-4 sm:space-y-5">
+                  <div className="flex justify-center">
                     <img
                       src="/assets/Free the heels.svg"
                       alt="Free the heels"
                       className="w-full max-w-[11rem] opacity-95 sm:max-w-[12rem]"
                     />
-                    <span className="hidden font-display text-[1.2rem] uppercase tracking-[0.06em] text-text sm:inline">
-                      Free the spirit
-                    </span>
                   </div>
-
-                  <img
-                    src="/assets/Heading decoration.svg"
-                    alt=""
-                    aria-hidden="true"
-                    className="mx-auto h-4 w-auto opacity-80"
-                  />
 
                   <img
                     src="/assets/Hero.svg"
                     alt="Aku Aspila illustration"
-                    className="mx-auto w-full max-w-[18rem] opacity-95 sm:max-w-[20rem]"
+                    className="mx-auto w-full max-w-[20rem] opacity-95 sm:max-w-[22rem]"
                   />
 
                   <div className="space-y-4">
