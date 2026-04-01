@@ -129,14 +129,14 @@ function App() {
                 initial={reduceMotion ? false : { opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
-                className="flex min-h-[calc(100dvh-5rem)] flex-col justify-center gap-7 pb-4 pt-3 text-center sm:min-h-[760px] sm:gap-8 sm:pt-4"
+                className="flex min-h-[calc(100dvh-5rem)] flex-col justify-start gap-7 pb-4 pt-3 text-center sm:min-h-[760px] sm:gap-8 sm:pt-4"
               >
                 <div className="space-y-4 sm:space-y-5">
                   <div className="flex justify-center">
                     <img
                       src="/assets/Free the heels.svg"
                       alt="Free the heels"
-                      className="w-full max-w-[11rem] opacity-95 sm:max-w-[12rem]"
+                      className="w-full max-w-[22rem] opacity-95"
                     />
                   </div>
 
