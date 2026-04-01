@@ -42,7 +42,6 @@ function SectionHeading({ title, subtitle }) {
         </p>
       ) : null}
       <div className="flex items-center justify-center gap-3 sm:gap-5">
-        <span className="section-heading-rule" aria-hidden="true" />
         <img
           src="/assets/Heading decoration.svg"
           alt=""
@@ -58,7 +57,6 @@ function SectionHeading({ title, subtitle }) {
           aria-hidden="true"
           className="h-5 w-auto shrink-0 scale-x-[-1] opacity-95"
         />
-        <span className="section-heading-rule" aria-hidden="true" />
       </div>
     </div>
   );
