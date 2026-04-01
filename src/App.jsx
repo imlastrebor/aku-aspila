@@ -46,7 +46,7 @@ function SectionHeading({ title, subtitle }) {
           src="/assets/Heading decoration.svg"
           alt=""
           aria-hidden="true"
-          className="h-5 w-auto shrink-0 opacity-95"
+          className="h-3 w-auto shrink-0 opacity-95 sm:h-3.5"
         />
         <h2 className="font-display text-[2.1rem] uppercase leading-none tracking-[-0.03em] text-text sm:text-[2.7rem]">
           {title}
@@ -55,7 +55,7 @@ function SectionHeading({ title, subtitle }) {
           src="/assets/Heading decoration.svg"
           alt=""
           aria-hidden="true"
-          className="h-5 w-auto shrink-0 scale-x-[-1] opacity-95"
+          className="h-3 w-auto shrink-0 scale-x-[-1] opacity-95 sm:h-3.5"
         />
       </div>
     </div>
@@ -69,7 +69,7 @@ function SectionDivider() {
         src="/assets/Divider.svg"
         alt=""
         aria-hidden="true"
-        className="mx-auto h-auto w-full max-w-[34rem] opacity-85"
+        className="mx-auto h-auto w-full max-w-[17rem] opacity-85 sm:max-w-[18rem]"
       />
     </div>
   );
