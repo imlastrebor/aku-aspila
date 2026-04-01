@@ -1,6 +1,7 @@
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 import BackgroundShader from "./BackgroundShader";
+import ContentPaperTexture from "./ContentPaperTexture";
 
 const galleryImages = [
   {
@@ -123,12 +124,13 @@ function App() {
       <div className="fixed left-1/2 top-1/2 z-10 h-[calc(100dvh-1.25rem)] w-[calc(100vw-1.25rem)] max-w-[760px] -translate-x-1/2 -translate-y-1/2 sm:h-[calc(100dvh-2rem)] sm:w-[min(760px,calc(100vw-2rem))]">
         <div className="h-full rounded-[26px] border-2 border-[rgba(122,59,42,0.85)] bg-[rgba(243,231,215,0.95)] p-[7px] shadow-frame">
           <div className="relative h-full rounded-[20px] border border-[rgba(122,59,42,0.45)] bg-surface paper-grain">
+            <ContentPaperTexture />
             <div className="pointer-events-none absolute inset-0 rounded-[20px] bg-[linear-gradient(180deg,rgba(255,255,255,0.35),rgba(243,231,215,0)_22%,rgba(180,74,46,0.06))]" />
             <div className="pointer-events-none absolute inset-[10px] rounded-[14px] border border-[rgba(122,59,42,0.38)]" />
 
             <div
               ref={scrollRef}
-              className="relative h-full overflow-y-auto scroll-smooth px-5 py-6 sm:px-8 sm:py-8"
+              className="relative z-10 h-full overflow-y-auto scroll-smooth px-5 py-6 sm:px-8 sm:py-8"
             >
               <motion.section
                 initial={reduceMotion ? false : { opacity: 0, y: 24 }}
